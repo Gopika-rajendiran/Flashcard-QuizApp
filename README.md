@@ -12,5 +12,5 @@ It is a simple flashcard quiz application built using HTML, CSS, and Javascript.
 * CSS
 * JAVASCRIPT
 # How to use
-* Clone the repository()
+* Clone the repository(https://github.com/Gopika-rajendiran/Flashcard-QuizApp)
 * Open the index.html file in a web to use the app.
