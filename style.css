@@ -1,0 +1,131 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #846cec, #846cec);
+    background-image: url(https://img.freepik.com/free-psd/3d-rendering-questions-background_23-2151455632.jpg?t=st=1740245984~exp=1740249584~hmac=becd3fefe84f24f7450c39a65c0ad19a637956a3c9bbcc663c210a1bbb43cae3&w=1380);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    overflow: hidden;
+ }
+ 
+ .flashcard-container {
+    text-align: center;
+    background-color: rgb(243, 247, 248);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin-bottom: 50px;
+ }
+ 
+ .flashcard {
+    width: 80%;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    margin: 0 auto;
+    align-items: center;
+ }
+ 
+ .flashcard.is-flipped {
+    transform: rotateY(180deg);
+ }
+ 
+ .flashcard div {
+    position: absolute;
+    width: 93%;
+    height: 80%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #846cec, #846cec);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    text-align: center;
+ }
+ 
+ .back {
+    transform: rotateY(180deg);
+ }
+ 
+ button {
+    margin: 10px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #080008;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+ }
+ 
+ button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+ }
+ 
+ button:hover:not(:disabled) {
+    background-color: #77d3ef;
+ }
+ 
+ button:active:not(:disabled) {
+    transform: scale(0.95);
+ }
+ 
+ .correct {
+    color: rgb(2, 190, 2);
+    font-weight: bold;
+ }
+ 
+ .wrong {
+    color: rgb(210, 4, 4);
+    font-weight: bold;
+ }
+ 
+ .score-container {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #043677;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+ }
+ 
+ .final-score {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #846cec;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+ }
+ 
+ #answer-input {
+    width: 82%;
+    padding: 20px;
+    margin-top: 20px;
+    border: 3px solid #043677;
+    border-radius: 15px;
+    font-size: 1.1em;
+    text-align: center;
+    outline: none;
+ }
+ 
+ #answer-input:focus {
+    border-color: #a714d3;
+ }
